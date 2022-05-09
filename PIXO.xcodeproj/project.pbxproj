@@ -19,6 +19,8 @@
 		D58D3ED028294C42007A8BDA /* PIXOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3ECF28294C42007A8BDA /* PIXOUITestsLaunchTests.swift */; };
 		D58D3ED828294CE9007A8BDA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D58D3ED728294CE9007A8BDA /* Then */; };
 		D58D3EDB28294CF7007A8BDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D58D3EDA28294CF7007A8BDA /* SnapKit */; };
+		D58D3EDD282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EDC282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift */; };
+		D58D3EE0282952CB007A8BDA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EDF282952CB007A8BDA /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D58D3ECB28294C42007A8BDA /* PIXOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIXOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58D3ECD28294C42007A8BDA /* PIXOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIXOUITests.swift; sourceTree = "<group>"; };
 		D58D3ECF28294C42007A8BDA /* PIXOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIXOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D58D3EDC282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		D58D3EDF282952CB007A8BDA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		D58D3EA7281FF3FF007A8BDA /* PIXO */ = {
 			isa = PBXGroup;
 			children = (
+				D58D3EDE282952BF007A8BDA /* Extension */,
 				D58D3EC228293D47007A8BDA /* ViewModel */,
 				D58D3EC128293D3A007A8BDA /* View */,
 				D58D3EBF28293BDD007A8BDA /* Support */,
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D58D3EC528293D94007A8BDA /* PhotoPickerView.swift */,
+				D58D3EDC282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +146,14 @@
 				D58D3ECF28294C42007A8BDA /* PIXOUITestsLaunchTests.swift */,
 			);
 			path = PIXOUITests;
+			sourceTree = "<group>";
+		};
+		D58D3EDE282952BF007A8BDA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D58D3EDF282952CB007A8BDA /* Constant.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +267,9 @@
 				D58D3EC428293D60007A8BDA /* PhotoPickerViewModel.swift in Sources */,
 				D58D3EC628293D94007A8BDA /* PhotoPickerView.swift in Sources */,
 				D58D3EAD281FF3FF007A8BDA /* ViewController.swift in Sources */,
+				D58D3EE0282952CB007A8BDA /* Constant.swift in Sources */,
 				D58D3EBE28293B86007A8BDA /* PhotoPickerViewController.swift in Sources */,
+				D58D3EDD282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift in Sources */,
 				D58D3EA9281FF3FF007A8BDA /* AppDelegate.swift in Sources */,
 				D58D3EAB281FF3FF007A8BDA /* SceneDelegate.swift in Sources */,
 			);
