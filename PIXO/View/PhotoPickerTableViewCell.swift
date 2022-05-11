@@ -9,13 +9,11 @@ import UIKit
 import Then
 import Photos
 
-final class PhotoPickerCollectionViewCell: UICollectionViewCell {
+final class PhotoPickerTableViewCell: UITableViewCell {
 
-    static let identifier = "PhotoPickerCollectionViewCell"
+    static let identifier = "PhotoPickerTableViewCell"
     let imageManager = PHImageManager()
     var representedAssetIdentifier: String?
-    let scale = UIScreen.main.scale
-    var thumbnailAssetSize = CGSize.zero
 
     var thumbnailSize: CGSize {
         let scale = UIScreen.main.scale
@@ -28,9 +26,15 @@ final class PhotoPickerCollectionViewCell: UICollectionViewCell {
         $0.clipsToBounds = true
     }
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    var label = UILabel().then {
+        $0.textAlignment = .left
+        $0.textColor = .black
+        $0.font = .boldSystemFont(ofSize: 16)
+    }
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
 
+        selectionStyle = .none
         setUpUI()
     }
 
@@ -39,23 +43,32 @@ final class PhotoPickerCollectionViewCell: UICollectionViewCell {
     }
 
     private func setUpUI() {
+
+        self.backgroundColor = .white
         addView()
         setUpConstraints()
     }
 
     private func addView() {
+
         contentView.addSubview(thumbnailImageView)
+        contentView.addSubview(label)
     }
 
     private func setUpConstraints() {
         thumbnailImageView.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(3)
+            $0.size.equalTo(100)
+            $0.centerY.equalToSuperview()
+            $0.top.equalToSuperview().offset(10)
+            $0.bottom.equalToSuperview().offset(-10)
+        }
+        label.snp.makeConstraints {
+            $0.leading.equalTo(thumbnailImageView.snp.trailing).offset(15)
+            $0.centerY.equalTo(thumbnailImageView)
         }
     }
 
     func configure(with image: UIImage?) {
         self.thumbnailImageView.image = image
     }
-
-
 }

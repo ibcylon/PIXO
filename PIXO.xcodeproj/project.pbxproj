@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D58D3EA9281FF3FF007A8BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EA8281FF3FF007A8BDA /* AppDelegate.swift */; };
 		D58D3EAB281FF3FF007A8BDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EAA281FF3FF007A8BDA /* SceneDelegate.swift */; };
-		D58D3EAD281FF3FF007A8BDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EAC281FF3FF007A8BDA /* ViewController.swift */; };
 		D58D3EB2281FF401007A8BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58D3EB1281FF401007A8BDA /* Assets.xcassets */; };
 		D58D3EB5281FF401007A8BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D3EB3281FF401007A8BDA /* LaunchScreen.storyboard */; };
 		D58D3EBE28293B86007A8BDA /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EBD28293B86007A8BDA /* PhotoPickerViewController.swift */; };
@@ -21,10 +20,27 @@
 		D58D3EDB28294CF7007A8BDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D58D3EDA28294CF7007A8BDA /* SnapKit */; };
 		D58D3EDD282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EDC282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift */; };
 		D58D3EE0282952CB007A8BDA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EDF282952CB007A8BDA /* Constant.swift */; };
+		D58D3EE3282962EC007A8BDA /* PHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EE2282962EC007A8BDA /* PHService.swift */; };
+		D58D3EEB28297691007A8BDA /* PIXOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EEA28297691007A8BDA /* PIXOTests.swift */; };
+		D58D3EF2282BE828007A8BDA /* LocalImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EF1282BE828007A8BDA /* LocalImageManager.swift */; };
+		D58D3EF6282BF69A007A8BDA /* PhotoPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EF5282BF69A007A8BDA /* PhotoPickerTableViewCell.swift */; };
+		D58D3EF8282C0825007A8BDA /* StickerVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EF7282C0825007A8BDA /* StickerVIewController.swift */; };
+		D58D3EFA282C08AD007A8BDA /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EF9282C08AD007A8BDA /* StickerView.swift */; };
+		D58D3EFC282C097C007A8BDA /* StickerCollectionVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EFB282C097C007A8BDA /* StickerCollectionVIewCell.swift */; };
+		D58D3EFE282C2F02007A8BDA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3EFD282C2F02007A8BDA /* UIView+Extension.swift */; };
+		D58D3F01282C327E007A8BDA /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D58D3F00282C327E007A8BDA /* Toast */; };
+		D58D3F04282C433D007A8BDA /* StickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D3F03282C433D007A8BDA /* StickerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D58D3ED128294C42007A8BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D58D3E9D281FF3FF007A8BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D58D3EA4281FF3FF007A8BDA;
+			remoteInfo = PIXO;
+		};
+		D58D3EEC28297691007A8BDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D58D3E9D281FF3FF007A8BDA /* Project object */;
 			proxyType = 1;
@@ -37,7 +53,6 @@
 		D58D3EA5281FF3FF007A8BDA /* PIXO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIXO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58D3EA8281FF3FF007A8BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58D3EAA281FF3FF007A8BDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D58D3EAC281FF3FF007A8BDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D58D3EB1281FF401007A8BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58D3EB4281FF401007A8BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D58D3EB6281FF401007A8BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,16 @@
 		D58D3ECF28294C42007A8BDA /* PIXOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIXOUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D58D3EDC282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		D58D3EDF282952CB007A8BDA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D58D3EE2282962EC007A8BDA /* PHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHService.swift; sourceTree = "<group>"; };
+		D58D3EE828297691007A8BDA /* PIXOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIXOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58D3EEA28297691007A8BDA /* PIXOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIXOTests.swift; sourceTree = "<group>"; };
+		D58D3EF1282BE828007A8BDA /* LocalImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageManager.swift; sourceTree = "<group>"; };
+		D58D3EF5282BF69A007A8BDA /* PhotoPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerTableViewCell.swift; sourceTree = "<group>"; };
+		D58D3EF7282C0825007A8BDA /* StickerVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerVIewController.swift; sourceTree = "<group>"; };
+		D58D3EF9282C08AD007A8BDA /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		D58D3EFB282C097C007A8BDA /* StickerCollectionVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionVIewCell.swift; sourceTree = "<group>"; };
+		D58D3EFD282C2F02007A8BDA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D58D3F03282C433D007A8BDA /* StickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +81,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58D3F01282C327E007A8BDA /* Toast in Frameworks */,
 				D58D3ED828294CE9007A8BDA /* Then in Frameworks */,
 				D58D3EDB28294CF7007A8BDA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D58D3EC828294C42007A8BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58D3EE528297691007A8BDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,6 +109,7 @@
 			children = (
 				D58D3EA7281FF3FF007A8BDA /* PIXO */,
 				D58D3ECC28294C42007A8BDA /* PIXOUITests */,
+				D58D3EE928297691007A8BDA /* PIXOTests */,
 				D58D3EA6281FF3FF007A8BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +119,7 @@
 			children = (
 				D58D3EA5281FF3FF007A8BDA /* PIXO.app */,
 				D58D3ECB28294C42007A8BDA /* PIXOUITests.xctest */,
+				D58D3EE828297691007A8BDA /* PIXOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +127,7 @@
 		D58D3EA7281FF3FF007A8BDA /* PIXO */ = {
 			isa = PBXGroup;
 			children = (
+				D58D3EE1282962DA007A8BDA /* Service */,
 				D58D3EDE282952BF007A8BDA /* Extension */,
 				D58D3EC228293D47007A8BDA /* ViewModel */,
 				D58D3EC128293D3A007A8BDA /* View */,
@@ -107,8 +143,8 @@
 		D58D3EBC281FF483007A8BDA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D58D3EAC281FF3FF007A8BDA /* ViewController.swift */,
 				D58D3EBD28293B86007A8BDA /* PhotoPickerViewController.swift */,
+				D58D3EF7282C0825007A8BDA /* StickerVIewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +163,9 @@
 			children = (
 				D58D3EC528293D94007A8BDA /* PhotoPickerView.swift */,
 				D58D3EDC282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift */,
+				D58D3EF5282BF69A007A8BDA /* PhotoPickerTableViewCell.swift */,
+				D58D3EF9282C08AD007A8BDA /* StickerView.swift */,
+				D58D3EFB282C097C007A8BDA /* StickerCollectionVIewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				D58D3EC328293D60007A8BDA /* PhotoPickerViewModel.swift */,
+				D58D3F03282C433D007A8BDA /* StickerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -152,8 +192,26 @@
 			isa = PBXGroup;
 			children = (
 				D58D3EDF282952CB007A8BDA /* Constant.swift */,
+				D58D3EFD282C2F02007A8BDA /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D58D3EE1282962DA007A8BDA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D58D3EE2282962EC007A8BDA /* PHService.swift */,
+				D58D3EF1282BE828007A8BDA /* LocalImageManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D58D3EE928297691007A8BDA /* PIXOTests */ = {
+			isa = PBXGroup;
+			children = (
+				D58D3EEA28297691007A8BDA /* PIXOTests.swift */,
+			);
+			path = PIXOTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +233,7 @@
 			packageProductDependencies = (
 				D58D3ED728294CE9007A8BDA /* Then */,
 				D58D3EDA28294CF7007A8BDA /* SnapKit */,
+				D58D3F00282C327E007A8BDA /* Toast */,
 			);
 			productName = PIXO;
 			productReference = D58D3EA5281FF3FF007A8BDA /* PIXO.app */;
@@ -198,6 +257,24 @@
 			productReference = D58D3ECB28294C42007A8BDA /* PIXOUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D58D3EE728297691007A8BDA /* PIXOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D58D3EEE28297691007A8BDA /* Build configuration list for PBXNativeTarget "PIXOTests" */;
+			buildPhases = (
+				D58D3EE428297691007A8BDA /* Sources */,
+				D58D3EE528297691007A8BDA /* Frameworks */,
+				D58D3EE628297691007A8BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D58D3EED28297691007A8BDA /* PBXTargetDependency */,
+			);
+			name = PIXOTests;
+			productName = PIXOTests;
+			productReference = D58D3EE828297691007A8BDA /* PIXOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +292,10 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = D58D3EA4281FF3FF007A8BDA;
 					};
+					D58D3EE728297691007A8BDA = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D58D3EA4281FF3FF007A8BDA;
+					};
 				};
 			};
 			buildConfigurationList = D58D3EA0281FF3FF007A8BDA /* Build configuration list for PBXProject "PIXO" */;
@@ -229,6 +310,7 @@
 			packageReferences = (
 				D58D3ED628294CE9007A8BDA /* XCRemoteSwiftPackageReference "Then" */,
 				D58D3ED928294CF7007A8BDA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D58D3EFF282C327E007A8BDA /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = D58D3EA6281FF3FF007A8BDA /* Products */;
 			projectDirPath = "";
@@ -236,6 +318,7 @@
 			targets = (
 				D58D3EA4281FF3FF007A8BDA /* PIXO */,
 				D58D3ECA28294C42007A8BDA /* PIXOUITests */,
+				D58D3EE728297691007A8BDA /* PIXOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +340,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D58D3EE628297691007A8BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,13 +354,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58D3EE3282962EC007A8BDA /* PHService.swift in Sources */,
+				D58D3EF2282BE828007A8BDA /* LocalImageManager.swift in Sources */,
+				D58D3F04282C433D007A8BDA /* StickerViewModel.swift in Sources */,
 				D58D3EC428293D60007A8BDA /* PhotoPickerViewModel.swift in Sources */,
+				D58D3EFE282C2F02007A8BDA /* UIView+Extension.swift in Sources */,
+				D58D3EFA282C08AD007A8BDA /* StickerView.swift in Sources */,
 				D58D3EC628293D94007A8BDA /* PhotoPickerView.swift in Sources */,
-				D58D3EAD281FF3FF007A8BDA /* ViewController.swift in Sources */,
 				D58D3EE0282952CB007A8BDA /* Constant.swift in Sources */,
 				D58D3EBE28293B86007A8BDA /* PhotoPickerViewController.swift in Sources */,
+				D58D3EF6282BF69A007A8BDA /* PhotoPickerTableViewCell.swift in Sources */,
+				D58D3EF8282C0825007A8BDA /* StickerVIewController.swift in Sources */,
 				D58D3EDD282951C0007A8BDA /* PhotoPickerCollectionViewCell.swift in Sources */,
 				D58D3EA9281FF3FF007A8BDA /* AppDelegate.swift in Sources */,
+				D58D3EFC282C097C007A8BDA /* StickerCollectionVIewCell.swift in Sources */,
 				D58D3EAB281FF3FF007A8BDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +381,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D58D3EE428297691007A8BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58D3EEB28297691007A8BDA /* PIXOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +396,11 @@
 			isa = PBXTargetDependency;
 			target = D58D3EA4281FF3FF007A8BDA /* PIXO */;
 			targetProxy = D58D3ED128294C42007A8BDA /* PBXContainerItemProxy */;
+		};
+		D58D3EED28297691007A8BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D58D3EA4281FF3FF007A8BDA /* PIXO */;
+			targetProxy = D58D3EEC28297691007A8BDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,6 +624,44 @@
 			};
 			name = Release;
 		};
+		D58D3EEF28297691007A8BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJDR485DTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kangho.PIXOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIXO.app/PIXO";
+			};
+			name = Debug;
+		};
+		D58D3EF028297691007A8BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJDR485DTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kangho.PIXOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIXO.app/PIXO";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,6 +692,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D58D3EEE28297691007A8BDA /* Build configuration list for PBXNativeTarget "PIXOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58D3EEF28297691007A8BDA /* Debug */,
+				D58D3EF028297691007A8BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -563,6 +720,14 @@
 				kind = branch;
 			};
 		};
+		D58D3EFF282C327E007A8BDA /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -575,6 +740,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D58D3ED928294CF7007A8BDA /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D58D3F00282C327E007A8BDA /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D3EFF282C327E007A8BDA /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
